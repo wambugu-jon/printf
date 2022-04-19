@@ -1,0 +1,54 @@
+_PRINTF                       User Commands      "ALX SCHOOL"
+
+NAME:
+	_printf - format and print data
+		- takes a format string and a variable number of 
+		  arguments depending on the format string
+SYNOPSIS:
+	_printf FORMAT [ARGUMENT]...
+	_printf OPTION
+
+DESCRIPTION:
+	Format specifiers allows the prototype:
+		%[flags][width][.precision][length]specifier
+	
+	Flags:
+		- : left-justify within given field width
+
+		+ : force to proceed result with a plus or minus sign
+
+		space : insert a blank space before a value if no sign is going to be written
+
+		# : preceed 0s on o,x or X specifiers; force decimals on a,A,e,E,f,F,g or G
+
+		0 : left-pad the number with zeroes instead spaces
+	
+	Width:
+		number: minimum number of characters to be printed
+
+		* :width specified as additional integer value
+
+	Precision:
+		numbers: d,i,o,u,x,X :minimum digits to be written
+
+			 a,A,e,E,f,F, :Number of digits after point
+
+			 g,G :Maximum number of digits to be printed
+
+			 s :Maximum number of characters to be printed
+
+	Specifiers:           Example
+		d or i		397		signed decimal integer
+
+		u		7224		unsigned decimal integer
+
+		o		610		unsigned octal
+
+		x		7fa		unsigned hexadecimal integer(lower)
+
+		s		sample		string of character
+
+		%		%		with single % after %
+
+AUTHOR:
+	Written by Leah Kagure & John Mbari
