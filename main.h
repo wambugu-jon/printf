@@ -50,6 +50,7 @@ int print_hexlower(va_list l, flags_t *f);
 int print_hexupper(va_list l, flags_t *f);
 int print_address(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
+int print_rot13(va_list l, flags_t *f);
 
 /* write_funcs */
 int _putchar(char c);
